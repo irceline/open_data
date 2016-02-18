@@ -31,7 +31,7 @@ Full example (you will have to change the timestamp - only the last 72 hours are
 ```html
 http://geo.irceline.be/rio/ows?service=WFS&version=1.3.0&request=GetFeature&typeName=rio:no2_hmean&cql_filter=timestamp=%272016-02-14T07:00:00%27%20AND%20INTERSECTS%28the_geom,%20POINT%20%28161617%20170644%29%29
 ```
-Note: you can only querry location with coordinates converted to [`EPSG:31370`](http://spatialreference.org/ref/epsg/belge-1972-belgian-lambert-72/)
+Note: you can only query location with coordinates converted to [`EPSG:31370`](http://spatialreference.org/ref/epsg/belge-1972-belgian-lambert-72/)
 
 The following layers are available (currently at a 4x4km resolution):
 
@@ -52,6 +52,8 @@ Coverage Belgium:
 * rio:pm25_24hmean
 * rio:pm25_dmean
 * rio:so2_hmean
+
+See [list of abbreviations](../readme.md#abbreviations)
 
 Attributes:
 
