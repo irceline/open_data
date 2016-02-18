@@ -24,11 +24,11 @@ The following workspaces serve a subsection of the data:
 1. http://geo.irceline.be/rio/wms
     - interpolated maps of RIO 4x4km
     - Coverage Belgium and per region
-    - see further [details here](dataset/rio.md)
+    - see further [details here](./dataset/rio.md)
 2. http://geo.irceline.be/realtime/wms
     - measurement data per station
     - selection possible via time parameter
-    - see further [details here](dataset/measurements.md)
+    - see further [details here](./dataset/measurements.md)
 3. http://geo.irceline.be/annual/wms
 
 ### Encodings
