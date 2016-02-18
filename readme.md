@@ -24,11 +24,11 @@ The following workspaces serve a subsection of the data:
 1. http://geo.irceline.be/rio/wms
     - interpolated maps of RIO 4x4km
     - Coverage Belgium and per region
-    - see further [details here](./dataset/rio.md)
+    - see further [details here](datasets/rio.md)
 2. http://geo.irceline.be/realtime/wms
     - measurement data per station
     - selection possible via time parameter
-    - see further [details here](./dataset/measurements.md)
+    - see further [details here](datasets/measurements.md)
 3. http://geo.irceline.be/annual/wms
 
 ### Encodings
@@ -132,7 +132,7 @@ A list of abbreviations used in het layer names:
 | max8hmean    | maximum 8hmean between 01h00 to 24h00 (timstamp = 01h00 of the running day)                      |
 | dmean        | mean concentration during one day (hmean 01h00 to 24h00 - timstamp = 01h00 of the following day) |
 | anmean       | mean concentration during one calendar year                                                      |
-| rio          | RIO interpolation - see [rio dataset](dataset/rio.md)                                            |
+| rio          | RIO interpolation - see [rio dataset](datasets/rio.md)                                           |
 | station      | data measured in a measuring station                                                             |
 | vl           | the network "Flanders"                                                                           |
 | wl           | the network "Wallonia"                                                                           |
