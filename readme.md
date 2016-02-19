@@ -122,7 +122,7 @@ A list of abbreviations used in het layer names:
 |:-------------|:-------------------------------------------------------------------------------------------------|
 | bc           | Black Carbon (BC)                                                                                |
 | no2          | Nitrogen dioxide (NO<sub>2</sub>)                                                                |
-| o3           | Ozone (<sub>O3</sub>)                                                                            |
+| o3           | Ozone (O<sub>3</sub>)                                                                            |
 | pm10         | Particulate Matter < 10 µm (PM<sub>10</sub>)                                                     |
 | pm25         | Particulate Matter < 2.5 µm (PM<sub>2.5</sub>)                                                   |
 | so2          | Sulphur dioxide (SO<sub>2</sub>)                                                                 |
