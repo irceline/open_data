@@ -127,14 +127,14 @@ A list of abbreviations used in het layer names:
 | pm25         | Particulate Matter < 2.5 µm (PM<sub>2.5</sub>)                                                   |
 | so2          | Sulphur dioxide (SO<sub>2</sub>)                                                                 |
 | hmean        | hourly mean (timstamp = end-time of hour)                                                        |
-| 24hmean      | 24 hour running mean (timstamp = end-time of 24 hour period)                                     |
-| 8hmean       | 8 hour running mean (timstamp = end-time of 8 hour period)                                       |
-| maxhmean     | maximum hmean between 01h00 to 24h00 (timstamp = 01h00 of the running day)                       |
-| max8hmean    | maximum 8hmean between 01h00 to 24h00 (timstamp = 01h00 of the running day)                      |
-| dmean        | mean concentration during one day (hmean 01h00 to 24h00 - timstamp = 01h00 of the following day) |
-| anmean       | mean concentration during one calendar year                                                      |
+| 24hmean      | Running 24-hour mean (timstamp = end-time of 24 hour period)                                     |
+| 8hmean       | Running 8-hour mean (timstamp = end-time of 8 hour period)                                       |
+| maxhmean     | Daily (01h00 to 24h00) maximum hmean (timstamp = 01h00 of the running day)                       |
+| max8hmean    | Daily (01h00 to 24h00) maximum 8hmean (timstamp = 01h00 of the running day)                      |
+| dmean        | Daily mean concentration (hmean 01h00 to 24h00 - timstamp = 01h00 of the following day) |
+| anmean       | Annual mean concentration (calendar year)                                                     |
 | rio          | RIO interpolation - see [rio dataset](datasets/rio.md)                                           |
-| station      | data measured in a measuring station                                                             |
+| station      | data measured in a monitoring station                                                             |
 | vl           | the network "Flanders"                                                                           |
 | wl           | the network "Wallonia"                                                                           |
 | br           | the network "Brussels"                                                                           |
