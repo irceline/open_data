@@ -21,14 +21,17 @@ See `GetCapabilities`:
 * http://geo.irceline.be/wms?service=wms&version=1.3.0&request=GetCapabilities
 
 The following workspaces serve a subsection of the data:
+
 1. http://geo.irceline.be/rio/wms
     - interpolated maps of RIO 4x4km
     - Coverage Belgium and per region
     - see further [details here](datasets/rio.md)
+
 2. http://geo.irceline.be/realtime/wms
     - measurement data per station
     - selection possible via time parameter
     - see further [details here](datasets/measurements.md)
+
 3. http://geo.irceline.be/annual/wms
 
 ### Encodings
