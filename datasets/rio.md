@@ -16,6 +16,12 @@ These layers are interpolated by means of the RIO-interpolation, based on non-va
 These layers support the `TIME` attribute in the `GetMap` request of the `WMS`. See a detailed description of this specific implementation here:
 http://docs.geoserver.org/latest/en/user/services/wms/time.html
 
+For a PNG of the latest hour BC on a transparent background, this would be sufficient:
+http://geo.irceline.be/rio/wms?service=WMS&version=1.1.0&request=GetMap&layers=rio:bc_hmean&styles=&bbox=22000.0,20000.0,298000.0,248000.0&width=512&transparent=true&height=422&srs=EPSG:31370&format=image%2Fpng
+
+If you prefer a different projection, adjust `srs` and `bbox`
+More info on `WMS`: http://docs.geoserver.org/stable/en/user/services/wms/reference.html
+
 The `WFS` does not support the `TIME` attribute. Use e.g `cql_filter` instead:
 http://docs.geoserver.org/latest/user/services/wfs/vendor.html
 
