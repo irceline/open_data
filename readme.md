@@ -1,5 +1,6 @@
 # Open (geo)data IRCEL-CELINE
 License: https://creativecommons.org/licenses/by/4.0/
+Also see: http://www.irceline.be/en/documentation/open-data
 
 ## Catalog Service for the Web (`CSW`)
 Metadata is hosted via:
@@ -18,7 +19,16 @@ Our end-point:
 * http://geo.irceline.be/wms
 
 See `GetCapabilities`:
-* http://geo.irceline.be/wms?service=wms&version=1.3.0&request=GetCapabilities
+* http://geo.irceline.be/wms?service=wms&version=1.3.0&request=GetCapabilities (slow due to large amount of layers)
+Better request metadata per workspace:
+* http://geo.irceline.be/realtime/wms?service=wms&version=1.3.0&request=GetCapabilities
+* http://geo.irceline.be/rio/wms?service=wms&version=1.3.0&request=GetCapabilities
+* http://geo.irceline.be/annual/wms?service=wms&version=1.3.0&request=GetCapabilities
+
+Or even per layer:
+* http://geo.irceline.be/realtime/no2_hmean_station/wms?service=wms&version=1.3.0&request=GetCapabilities
+* http://geo.irceline.be/rio/no2_hmean/wms?service=wms&version=1.3.0&request=GetCapabilities
+* http://geo.irceline.be/annual/no2_anmean/wms?service=wms&version=1.3.0&request=GetCapabilities
 
 The following workspaces serve a subsection of the data:
 
@@ -41,7 +51,7 @@ Available encodings (see [format](http://docs.geoserver.org/latest/en/user/servi
 * jpeg
 * tiff
 
-See full list in [GetCapabilities](http://geo.irceline.be/wms?service=wms&version=1.3.0&request=GetCapabilities) under `<GetMap>` `<Format>`
+See full list in, e.g.: [GetCapabilities](http://geo.irceline.be/rio/wms?service=wms&version=1.3.0&request=GetCapabilities) under `<GetMap>` `<Format>`
 
 ### Projections
 Available projections (see [srs](http://docs.geoserver.org/latest/en/user/services/wms/reference.html#wms-getmap) parameter):
@@ -115,6 +125,10 @@ General documentation of the OGC standard for SOS:
 Documentation:
 * http://geo.irceline.be/sos/static/doc/api-doc/
 
+## Bulk downloads
+[ATMO-Street](http://www.irceline.be/nl/documentatie/modellen/rio-ifdm-ospm): ftp://ftp.irceline.be/atmostreet
+[RIO-IFDM](http://www.irceline.be/en/documentation/models/rio-ifdm): ftp://ftp.irceline.be/rioifdm
+
 ## Legends
 See: https://github.com/irceline/map_legends
 
@@ -141,3 +155,5 @@ A list of abbreviations used in het layer names:
 | vl           | the network "Flanders"                                                                        |
 | wl           | the network "Wallonia"                                                                        |
 | br           | the network "Brussels"                                                                        |
+
+
