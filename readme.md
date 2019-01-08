@@ -126,8 +126,8 @@ Documentation:
 * http://geo.irceline.be/sos/static/doc/api-doc/
 
 ## Bulk downloads
-[ATMO-Street](http://www.irceline.be/nl/documentatie/modellen/rio-ifdm-ospm): ftp://ftp.irceline.be/atmostreet
-[RIO-IFDM](http://www.irceline.be/en/documentation/models/rio-ifdm): ftp://ftp.irceline.be/rioifdm
+* [ATMO-Street](http://www.irceline.be/nl/documentatie/modellen/rio-ifdm-ospm): ftp://ftp.irceline.be/atmostreet
+* [RIO-IFDM](http://www.irceline.be/en/documentation/models/rio-ifdm): ftp://ftp.irceline.be/rioifdm
 
 ## Legends
 See: https://github.com/irceline/map_legends
