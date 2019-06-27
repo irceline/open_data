@@ -33,10 +33,10 @@ Attributes:
 | the_geom    | Geometry   | Geometry of the measuring station (point feature)                                             |
 
 These layers support the `TIME` attribute in the `GetMap` request of the `WMS`. See a detailed description of this specific implementation here:
-http://docs.geoserver.org/latest/en/user/services/wms/time.html
+* http://docs.geoserver.org/latest/en/user/services/wms/time.html
 
 The `WFS` does not support the `TIME` attribute. Use e.g `cql_filter` instead:
-http://docs.geoserver.org/latest/user/services/wfs/vendor.html
+* http://docs.geoserver.org/latest/user/services/wfs/vendor.html
 
 You can filter for a specific location:
 ```xml
@@ -56,12 +56,13 @@ Note: you can only query location with coordinates converted to [`EPSG:31370`](h
 timeseries per measuring station
 
 #### SOAP-endpoint:
-http://geo.irceline.be/sos/client
+* http://geo.irceline.be/sos/client
 
-General documentation of the OGC standard for SOS: http://www.opengeospatial.org/standards/sos
+General documentation of the OGC standard for SOS:
+* http://www.opengeospatial.org/standards/sos
 
 Documentation specific `SOS` implementation:
-https://wiki.52north.org/bin/view/SensorWeb/SensorObservationServiceIVDocumentation
+* https://wiki.52north.org/bin/view/SensorWeb/SensorObservationServiceIVDocumentation
 
 #### REST-api:
 
