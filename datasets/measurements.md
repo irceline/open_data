@@ -64,9 +64,15 @@ Documentation specific `SOS` implementation:
 https://wiki.52north.org/bin/view/SensorWeb/SensorObservationServiceIVDocumentation
 
 #### REST-api:
-http://geo.irceline.be/sos/api/v1/
 
-Documentation: http://geo.irceline.be/sos/static/doc/api-doc/
+* http://geo.irceline.be/sos/api/v1/
+
+Documentation:
+* http://geo.irceline.be/sos/static/doc/api-doc/
+
+To explore the data here:
+* http://geo.irceline.be/sos/static/client/jsClient/
+You can also download `CSV` after selecting a specific time series in the map view tab and clicking on the info-icon (legend panel) in the diagram view tab.
 
 ## Annual means (validated)
 ### `WMS` or `WFS`:
