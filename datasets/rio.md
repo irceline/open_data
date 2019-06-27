@@ -1,6 +1,6 @@
 # RIO (modelled)
 More info about the RIO interpolation:
-* http://www.irceline.be//nl/documentatie/modellen/modellen#rio%20interpolatiemethode (Dutch)
+* http://www.irceline.be/nl/documentatie/modellen/modellen#rio%20interpolatiemethode (Dutch)
 * http://www.irceline.be/fr/documentation/modeles/modeles#m-thode-d-interpolation-rio (French)
 * http://www.irceline.be/en/documentation/publications/scientific-journals/rio-corine
 * http://www.sciencedirect.com/science/article/pii/S1352231008001829
