@@ -51,6 +51,8 @@ Available encodings (see [format](https://docs.geoserver.org/latest/en/user/serv
 * png8
 * jpeg
 * tiff
+* kml
+* ...
 
 See full list in, e.g.: [GetCapabilities](https://geo.irceline.be/rio/wms?service=wms&version=1.3.0&request=GetCapabilities) under `<GetMap>` `<Format>`
 
@@ -78,13 +80,12 @@ See `GetCapabilities`:
 https://geo.irceline.be/wfs?service=wfs&version=2.0.0&request=GetCapabilities
 
 ### Encodings
-Available encodings (see [outputformats](https://docs.geoserver.org/latest/en/user/services/wfs/outputformats.html) parameter):
-* gml
-* json
-* csv
-* kml
-* shp
-* js
+Available encodings (see [output formats](https://docs.geoserver.org/latest/en/user/services/wfs/outputformats.html) parameter):
+* gml (`outputFormat=GML2` or `outputFormat=GML3`)
+* json (`outputFormat=application/json`)
+* csv (`outputFormat=csv`)
+* shp (`outputFormat=shape-zip`)
+* jsonp (`outputFormat=text/javascript`)
 
 See full list in [GetCapabilities](https://geo.irceline.be/wfs?service=wfs&version=2.0.0&request=GetCapabilities) under `<ows:Parameter name="outputFormat">`
 
