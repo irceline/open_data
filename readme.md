@@ -25,11 +25,13 @@ Better request metadata per workspace:
 * https://geo.irceline.be/realtime/wms?service=wms&version=1.3.0&request=GetCapabilities
 * https://geo.irceline.be/rio/wms?service=wms&version=1.3.0&request=GetCapabilities
 * https://geo.irceline.be/annual/wms?service=wms&version=1.3.0&request=GetCapabilities
+* https://geo.irceline.be/rioifdm/wms?service=wms&version=1.3.0&request=GetCapabilities
 
 Or even per layer:
 * https://geo.irceline.be/realtime/no2_hmean_station/wms?service=wms&version=1.3.0&request=GetCapabilities
 * https://geo.irceline.be/rio/no2_hmean/wms?service=wms&version=1.3.0&request=GetCapabilities
 * https://geo.irceline.be/annual/no2_anmean/wms?service=wms&version=1.3.0&request=GetCapabilities
+* https://geo.irceline.be/rioifdm/no2_anmean_2018_atmostreet/wms?service=wms&version=1.3.0&request=GetCapabilities
 
 The following workspaces serve a subsection of the data:
 
@@ -39,11 +41,16 @@ The following workspaces serve a subsection of the data:
     - see further [details here](datasets/rio.md)
 
 2. https://geo.irceline.be/realtime/wms
-    - measurement data per station
+    - real time measurement data per station
     - selection possible via time parameter
     - see further [details here](datasets/measurements.md)
 
 3. https://geo.irceline.be/annual/wms
+    - aggregated measurement data per station
+    
+4. https://geo.irceline.be/rioifdm/wms
+    - maps of RIO-IFDM and ATMO-Street
+    - Coverage Belgium and per region
 
 ### Encodings
 Available encodings (see [format](https://docs.geoserver.org/latest/en/user/services/wms/outputformats.html#wms-output-formats) parameter):
@@ -99,6 +106,28 @@ Documentation specific `WFS` implementation:
 General documentation of the OGC standard for `WFS`:
 * https://www.opengeospatial.org/standards/wfs
 
+## Web Coverage Service (`WCS`) - download service
+A WCS serves raster format geographical data.
+
+Our end-point:
+* https://geo.irceline.be/wcs
+
+See `GetCapabilities`:
+https://geo.irceline.be/wcs?service=wcs&version=2.0.1&request=GetCapabilities
+
+Use `DescribeCoverage` to get a full description of the coverages by layer:
+https://geo.irceline.be/wcs?service=WCS&version=2.0.1&request=DescribeCoverage&coverageid=rioifdm:no2_anmean_2017_atmostreet
+
+Size for output download is limited to 50Mb. 
+
+### Documentation WCS
+Documentation specific `WCS` implementation:
+* https://docs.geoserver.org/latest/en/user/services/wcs/index.html
+
+General documentation of the OGC standard for `WCS`:
+* https://www.ogc.org/standard/wcs/
+
+
 ## Sensor Observation Service (SOS) - download service
 A SOS serves sensor data (time series, metadata of stations and measuring devices) collected at a specific geographical location.
 
@@ -128,10 +157,11 @@ Documentation:
 * https://geo.irceline.be/sos/static/doc/api-doc/
 
 ## Bulk downloads
+RIO: http://ftp.irceline.be/rio4x4/
 
-[ATMO-Street](https://www.irceline.be/nl/documentatie/modellen/rio-ifdm-ospm): ftp://ftp.irceline.be/atmostreet
+[RIO-IFDM](https://www.irceline.be/en/documentation/models/rio-ifdm): http://ftp.irceline.be/rioifdm
 
-[RIO-IFDM](https://www.irceline.be/en/documentation/models/rio-ifdm): ftp://ftp.irceline.be/rioifdm
+[ATMO-Street](https://www.irceline.be/nl/documentatie/modellen/rio-ifdm-ospm): http://ftp.irceline.be/atmostreet
 
 ## Legends
 See: https://github.com/irceline/map_legends
