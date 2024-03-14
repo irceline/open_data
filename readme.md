@@ -113,7 +113,7 @@ Our end-point:
 * https://geo.irceline.be/wcs
 
 See `GetCapabilities`:
-https://geo.irceline.be/wcs?service=wcs&version=2.0.1&request=GetCapabilities
+https://geo.irceline.be/wcs?service=WCS&version=2.0.1&request=GetCapabilities
 
 Use `DescribeCoverage` to get a full description of the coverages by layer:
 https://geo.irceline.be/wcs?service=WCS&version=2.0.1&request=DescribeCoverage&coverageid=rioifdm:no2_anmean_2017_atmostreet
