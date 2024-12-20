@@ -177,6 +177,7 @@ A list of abbreviations used in het layer names:
 | pm10         | Particulate Matter < 10 µm (PM<sub>10</sub>)                                                  |
 | pm25         | Particulate Matter < 2.5 µm (PM<sub>2.5</sub>)                                                |
 | so2          | Sulphur dioxide (SO<sub>2</sub>)                                                              |
+| belaqi       | the Belgian Air Quality Index                                                                 |
 | hmean        | hourly mean (timstamp = end-time of hour)                                                     |
 | 24hmean      | Running 24-hour mean (timstamp = end-time of 24 hour period)                                  |
 | 8hmean       | Running 8-hour mean (timstamp = end-time of 8 hour period)                                    |
